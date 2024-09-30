@@ -1,0 +1,106 @@
+.testimonials-section {
+    padding: 4rem 2rem;
+    background-color: #1b2239;
+}
+
+.testimonials-head {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-head h2 {
+    font-size: 2.5rem;
+    color: #00ffd5;
+    margin-bottom: 1rem;
+}
+
+.testimonials-head p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.testimonials-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #2a3550;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.feedback {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-card h3 {
+    font-size: 1.3rem;
+    color: #00ffd5;
+    margin-bottom: 0.5rem;
+}
+
+.job-info {
+    font-size: 1rem;
+    color: #d0d7e2;
+}
+
+.slider-button {
+    background-color: transparent;
+    border: none;
+    color: #00ffd5;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.slider-button:hover {
+    color: #00ccaa;
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 3rem 1rem;
+    }
+
+    .testimonials-head h2 {
+        font-size: 2rem;
+    }
+
+    .testimonials-head p {
+        font-size: 1rem;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .feedback {
+        font-size: 1rem;
+    }
+
+    .testimonial-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .job-info {
+        font-size: 0.9rem;
+    }
+}

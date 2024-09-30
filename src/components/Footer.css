@@ -1,87 +1,154 @@
 .project-footer {
-    background-color: #1b2239; 
-    padding: 40px;
-    display: flex;
-    max-width: 80rem;
+  background-color: #1b2239;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  margin: 2rem auto;
+  position: relative;
+  bottom: -7rem;
+  z-index: 3;
+  width: 90%;
+  max-width: 80rem;
+}
+
+.project-footer h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  color: white;
+}
+
+.project-footer p {
+  font-size: 1rem;
+  color: #d0d7e2;
+}
+
+.contentp {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.cta-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #00ffbd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #00ffbd;
+  color: #1b2239;
+  border-color: transparent;
+}
+
+.footer {
+  z-index: 1;
+  background: #8300fd;
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contents {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.social-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.footer-credits {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .project-footer {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px; 
-    color: white;
-    margin: 50px auto;
-    position: relative;
-    bottom: -7rem;
-    z-index: 3;
+    padding: 3rem;
   }
-  
+
   .project-footer h2 {
     font-size: 2rem;
-    margin: 0;
-    color: white;
   }
-  
+
   .project-footer p {
     font-size: 1.2rem;
-    color: #d0d7e2;
   }
-  
-  .contentp{
+
+  .contentp {
     max-width: 30rem;
+    margin-bottom: 0;
+    text-align: left;
   }
+
   .button-container {
     text-align: right;
   }
-  
-  .cta-button {
-    background-color: transparent;
-    color: white;
-    border: 2px solid #00ffbd; 
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #00ffbd; 
-    color: #1b2239;
-    border-color: transparent;
-  }
-  .footer{
-    z-index: 1;
-    background: #8300fd;
-    width: 100vw;
-    height: 40rem;
-    display:  flex;
-    position:relative;
-    justify-content: center;
-    align-items: center;
-    left:49.1%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-  .footer-contents{
-    z-index: 2;
-    position:absolute;
-  margin: 8rem auto;
-  }
-  
-  .social-div{
-    display: flex;
-    justify-content: space-between;
-    pointer-events: auto;
-    
-  }
-  .social-icons{
-    margin: 0 10px;
+
+  .social-icons {
     height: 3rem;
     width: 3rem;
-
   }
-.footer-credits{
-  margin-top: 18rem;
-  font-size: 1.2rem;
+
+  .footer-credits {
+    font-size: 1.2rem;
+  }
 }
-  
+
+@media (max-width: 767px) {
+  .project-footer {
+    padding: 1.5rem;
+    bottom: -5rem;
+  }
+
+  .project-footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-footer p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .footer {
+    padding: 3rem 0;
+  }
+
+  .social-icons {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .footer-credits {
+    font-size: 0.9rem;
+  }
+}
