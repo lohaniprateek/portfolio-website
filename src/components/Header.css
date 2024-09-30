@@ -1,0 +1,29 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+  }
+ h2 > a {
+    text-decoration: none;
+  }
+  
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    gap: 10px;
+    margin-right: 20px;
+  }
+  li * {
+    text-decoration: none;
+    display: flex;
+    height: 1.5rem;
+    width: 7rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid greenyellow;
+  }
+  
