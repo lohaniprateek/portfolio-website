@@ -1,0 +1,135 @@
+.hero-section {
+    padding: 6rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00ffd5;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #00ffd5;
+    color: #1b2239;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00ccaa;
+}
+
+.hero-image {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.my-img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+}
+
+.circle {
+    background: #8300fd;
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.front-img {
+    width: 100%;
+    max-width: 800px;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.about {
+    background: #8300fd;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding-top: 8rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .my-img {
+        height: 16rem;
+        width: 16rem;
+    }
+
+    .circle {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .about {
+        padding: 3rem 2rem;
+    }
+
+    .about h3 {
+        font-size: 1.8rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+    }
+}

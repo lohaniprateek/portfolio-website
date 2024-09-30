@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 16px;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
   margin: 0;
   padding: 0;
-  color-scheme: light dark;
-  /* cursor: none; */
-  /* z-index: -1; */
+  overflow-x: hidden;
 }
-
-.glow-cursor{
-/* z-index: 10; */
-pointer-events: all;
-}
-
 
 .jakarta {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -30,84 +30,24 @@ pointer-events: all;
 }
 
 .pt-italic {
-
-  .plus-jakarta-sans {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 450;
-    font-style: normal;
-  }
-  
-  .pt-serif-regular {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .oswald {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
 }
 
-.oswald{
+.oswald {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-.hero-section{
-  margin-top: 6rem;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.hero-section > p {
-  font-size: 25px;
-}
-
-.circle{
-  background: #8300fd;
-  border-radius: 1000px;
-  width: 11.4rem;
-  height: 12rem;
-  margin: 0 auto;
-  margin-top: -12.6rem;
-
-}
-
-.my-img{
-  height: 17rem;
-  width: 12rem;
-  border-radius: 125px;
-}
-
-.front-img{
-  margin-top: 8rem;
-  width: 70%;
-  filter: invert(0.9);
-}
-.about{
-  font-size: 20px;
-  background: #8300fd;
-  width: 100vw;
-  position: relative;
-  left:49.1%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.about > p{
-  width: 35rem;
-  margin: 0 auto;
-}
-
-.invert-clr{
+.invert-clr {
   filter: invert(100%);
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
 }
