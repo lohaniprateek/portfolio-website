@@ -1,0 +1,188 @@
+.contact-section {
+	max-width: 105rem;
+	color: #ffffff;
+	padding: 3rem;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.contact-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.contact-header h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.contact-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+.service-options h3 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.service-buttons {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.service-button {
+	padding: 0.5rem 1rem;
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.service-button.active,
+.service-button:hover {
+	background-color: #ffffff;
+	color: #1f1f1f;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	flex: 1;
+}
+
+.input-group {
+	display: flex;
+	gap: 1rem;
+}
+
+.input-group input {
+	flex: 1;
+	padding: 0.5rem;
+	border: none;
+	border-bottom: 2px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border: none;
+	border-bottom: 2px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.submit-button {
+	padding: 1rem;
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.submit-button:hover {
+	background-color: #ffffff;
+	color: #1f1f1f;
+}
+
+.contact-info {
+	max-width: 300px;
+}
+
+.contact-info p {
+	margin-bottom: 2rem;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-icons a {
+	color: #ffffff;
+	font-size: 1.5rem;
+	transition: color 0.3s;
+}
+
+.social-icons a:hover {
+	color: #ffd700;
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+	.contact-body {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.contact-info {
+		max-width: 100%;
+		margin-top: 2rem;
+	}
+
+	.input-group {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.input-group input {
+		width: 100%;
+	}
+
+	.service-buttons {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 480px) {
+	.contact-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.contact-header h2 {
+		font-size: 1.5rem;
+	}
+
+	.service-buttons {
+		gap: 0.5rem;
+	}
+
+	.service-button {
+		font-size: 0.9rem;
+		padding: 0.4rem 0.8rem;
+	}
+
+	.submit-button {
+		width: 100%;
+		padding: 0.8rem;
+	}
+
+	.contact-info p {
+		font-size: 0.9rem;
+	}
+
+	.social-icons {
+		justify-content: center;
+	}
+
+	.social-icons a {
+		font-size: 1.2rem;
+	}
+}

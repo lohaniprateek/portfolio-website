@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -32,7 +33,7 @@ function Header() {
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-content">
         <h2 className="logo logo-spin">
-          <a href="#">Prateek</a>
+          <Link to="/">Prateek</Link>
         </h2>
         <button
           className={`hamburger ${isMenuOpen ? "open" : ""}`}
@@ -45,19 +46,19 @@ function Header() {
         <nav className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="#about" className="nav-link" onClick={toggleMenu}>
+              <Link to="/about" className="nav-link" onClick={toggleMenu}>
                 About
-              </a>
+              </ Link>
             </li>
             <li>
-              <a href="#projects" className="nav-link" onClick={toggleMenu}>
+              <Link to="/projects" className="nav-link" onClick={toggleMenu}>
                 Projects
-              </a>
+              </ Link>
             </li>
             <li>
-              <a href="#contact" className="nav-link" onClick={toggleMenu}>
+              <Link to="/contact" className="nav-link" onClick={toggleMenu}>
                 Contact
-              </a>
+              </ Link>
             </li>
           </ul>
         </nav>

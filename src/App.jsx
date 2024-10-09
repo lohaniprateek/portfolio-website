@@ -1,19 +1,18 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import "./App.css";
 import GlowingCursor from "./components/GlowingCursor";
-import HeroSection from "./components/HeroSection";
-import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
+
 function App() {
-  return (
-    <>
-      <GlowingCursor />
-      <Header />
-      <HeroSection />
-      <Testimonials />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<GlowingCursor />
+			<Header />
+			<Outlet />
+			<Footer />
+		</>
+	);
 }
 
 export default App;
